@@ -2,6 +2,7 @@ package ExtentReportPackage;
 
 import java.io.File;
 import java.io.IOException;
+import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.concurrent.TimeUnit;
@@ -37,7 +38,7 @@ public class ExtentReportTest
 		//Telling System Where Exactly Extent Report has to be Generated under Project.
 		//Giving Boolean value true >> If Previous ExtentReport.html is there Replace it with New.
 		//If we make False, It will not Replace.
-		extent = new ExtentReports(System.getProperty("user.dir")+"/ExtentReportsResults/ExtentReport.html", true);
+		extent = new ExtentReports(System.getProperty("user.dir") + "/ExtentReportsResults/CRMExtentReport" + ExtentReportTest.getSystemDate() + ".html");
 		extent.addSystemInfo("Host Name", "Pavan's Windows System");
 		extent.addSystemInfo("User Name", "Pavan KrishnanReddy");
 		extent.addSystemInfo("Environment", "Automation Testing");
@@ -57,15 +58,22 @@ public class ExtentReportTest
 	public static String getScreenshot(WebDriver driver, String screenshotName) throws IOException
 	{
 		//We have generated Date now.
-		String dateName = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
+		String dateName = new SimpleDateFormat("_ddMMyyyy_HHmmss").format(new Date());
 		TakesScreenshot ts = (TakesScreenshot) driver;
 		File source = ts.getScreenshotAs(OutputType.FILE);
 		//After execution, you could see a folder "FailedTestsScreenshots"
 		//Under Source folder
-		String destination = System.getProperty("user.dir") + "/FailedTestsScreenshots/" + screenshotName + dateName+ ".png";
+		String destination = System.getProperty("user.dir") + "/FailedTestsScreenshots/" + screenshotName + dateName + ".png";
 		File finalDestination = new File(destination);
 		FileUtils.copyFile(source, finalDestination);
 		return destination;
+	}
+	
+	public static String getSystemDate() 
+	{
+		DateFormat dateFormat = new SimpleDateFormat("_ddMMyyyy_HHmmss");
+		Date date = new Date();
+		return dateFormat.format(date);
 	}
 	
 	@BeforeMethod

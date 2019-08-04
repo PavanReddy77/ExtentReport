@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="2" total="2" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="47448" started-at="2019-08-04T07:15:31Z" finished-at="2019-08-04T07:16:19Z">
+  <suite name="Default suite" duration-ms="45518" started-at="2019-08-04T07:47:07Z" finished-at="2019-08-04T07:47:53Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="47448" started-at="2019-08-04T07:15:31Z" finished-at="2019-08-04T07:16:19Z">
+    <test name="Default test" duration-ms="45518" started-at="2019-08-04T07:47:07Z" finished-at="2019-08-04T07:47:53Z">
       <class name="ExtentReportPackage.ExtentReportTest">
-        <test-method status="PASS" signature="setExtent()[pri:0, instance:ExtentReportPackage.ExtentReportTest@39c0f4a]" name="setExtent" is-config="true" duration-ms="359" started-at="2019-08-04T12:45:31Z" finished-at="2019-08-04T12:45:31Z">
+        <test-method status="PASS" signature="setExtent()[pri:0, instance:ExtentReportPackage.ExtentReportTest@39c0f4a]" name="setExtent" is-config="true" duration-ms="345" started-at="2019-08-04T13:17:07Z" finished-at="2019-08-04T13:17:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setExtent -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:ExtentReportPackage.ExtentReportTest@39c0f4a]" name="setUp" is-config="true" duration-ms="12507" started-at="2019-08-04T12:45:31Z" finished-at="2019-08-04T12:45:44Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:ExtentReportPackage.ExtentReportTest@39c0f4a]" name="setUp" is-config="true" duration-ms="11206" started-at="2019-08-04T13:17:07Z" finished-at="2019-08-04T13:17:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="freeCRMTitleTest()[pri:1, instance:ExtentReportPackage.ExtentReportTest@39c0f4a]" name="freeCRMTitleTest" duration-ms="30" started-at="2019-08-04T12:45:44Z" finished-at="2019-08-04T12:45:44Z">
+        <test-method status="FAIL" signature="freeCRMTitleTest()[pri:1, instance:ExtentReportPackage.ExtentReportTest@39c0f4a]" name="freeCRMTitleTest" duration-ms="33" started-at="2019-08-04T13:17:19Z" finished-at="2019-08-04T13:17:19Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [CRMPRO - CRM software for customer relationship management, sales, and support.123] but found [CRMPRO - CRM software for customer relationship management, sales, and support.]]]>
@@ -28,7 +28,7 @@
 	at org.testng.Assert.assertEquals(Assert.java:116)
 	at org.testng.Assert.assertEquals(Assert.java:190)
 	at org.testng.Assert.assertEquals(Assert.java:200)
-	at ExtentReportPackage.ExtentReportTest.freeCRMTitleTest(ExtentReportTest.java:92)
+	at ExtentReportPackage.ExtentReportTest.freeCRMTitleTest(ExtentReportTest.java:100)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -60,7 +60,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- freeCRMTitleTest -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:ExtentReportPackage.ExtentReportTest@39c0f4a]" name="tearDown" is-config="true" duration-ms="1043" started-at="2019-08-04T12:45:44Z" finished-at="2019-08-04T12:45:45Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:ExtentReportPackage.ExtentReportTest@39c0f4a]" name="tearDown" is-config="true" duration-ms="1011" started-at="2019-08-04T13:17:19Z" finished-at="2019-08-04T13:17:20Z">
           <params>
             <param index="0">
               <value>
@@ -71,11 +71,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:ExtentReportPackage.ExtentReportTest@39c0f4a]" name="setUp" is-config="true" duration-ms="11481" started-at="2019-08-04T12:45:45Z" finished-at="2019-08-04T12:45:56Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:ExtentReportPackage.ExtentReportTest@39c0f4a]" name="setUp" is-config="true" duration-ms="10914" started-at="2019-08-04T13:17:20Z" finished-at="2019-08-04T13:17:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="freemCRMLogoTest()[pri:2, instance:ExtentReportPackage.ExtentReportTest@39c0f4a]" name="freemCRMLogoTest" duration-ms="20037" started-at="2019-08-04T12:45:56Z" finished-at="2019-08-04T12:46:17Z">
+        <test-method status="FAIL" signature="freemCRMLogoTest()[pri:2, instance:ExtentReportPackage.ExtentReportTest@39c0f4a]" name="freemCRMLogoTest" duration-ms="20071" started-at="2019-08-04T13:17:31Z" finished-at="2019-08-04T13:17:51Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//img[@class='img-responsive111']"}
@@ -86,8 +86,8 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
 System info: host: 'ADMIN-PC', ip: '172.20.10.3', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_211'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab), userDataDir=C:\Users\Admin\AppData\Local\Temp\scoped_dir4584_21457}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=75.0.3770.142, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 351a3ca095b976c31843f223bcf97dba
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab), userDataDir=C:\Users\Admin\AppData\Local\Temp\scoped_dir2792_28096}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=75.0.3770.142, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: c6166a0c1163bc4bef1b77b91d247c15
 *** Element info: {Using=xpath, value=//img[@class='img-responsive111']}]]>
             </message>
             <full-stacktrace>
@@ -99,8 +99,8 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
 System info: host: 'ADMIN-PC', ip: '172.20.10.3', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_211'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab), userDataDir=C:\Users\Admin\AppData\Local\Temp\scoped_dir4584_21457}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=75.0.3770.142, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 351a3ca095b976c31843f223bcf97dba
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab), userDataDir=C:\Users\Admin\AppData\Local\Temp\scoped_dir2792_28096}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=75.0.3770.142, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: c6166a0c1163bc4bef1b77b91d247c15
 *** Element info: {Using=xpath, value=//img[@class='img-responsive111']}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -118,7 +118,7 @@ Session ID: 351a3ca095b976c31843f223bcf97dba
 	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:518)
 	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:408)
-	at ExtentReportPackage.ExtentReportTest.freemCRMLogoTest(ExtentReportTest.java:99)
+	at ExtentReportPackage.ExtentReportTest.freemCRMLogoTest(ExtentReportTest.java:107)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -150,7 +150,7 @@ Session ID: 351a3ca095b976c31843f223bcf97dba
           <reporter-output>
           </reporter-output>
         </test-method> <!-- freemCRMLogoTest -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:ExtentReportPackage.ExtentReportTest@39c0f4a]" name="tearDown" is-config="true" duration-ms="1463" started-at="2019-08-04T12:46:17Z" finished-at="2019-08-04T12:46:18Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:ExtentReportPackage.ExtentReportTest@39c0f4a]" name="tearDown" is-config="true" duration-ms="1428" started-at="2019-08-04T13:17:51Z" finished-at="2019-08-04T13:17:52Z">
           <params>
             <param index="0">
               <value>
@@ -161,7 +161,7 @@ Session ID: 351a3ca095b976c31843f223bcf97dba
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="endReport()[pri:0, instance:ExtentReportPackage.ExtentReportTest@39c0f4a]" name="endReport" is-config="true" duration-ms="499" started-at="2019-08-04T12:46:18Z" finished-at="2019-08-04T12:46:19Z">
+        <test-method status="PASS" signature="endReport()[pri:0, instance:ExtentReportPackage.ExtentReportTest@39c0f4a]" name="endReport" is-config="true" duration-ms="479" started-at="2019-08-04T13:17:52Z" finished-at="2019-08-04T13:17:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->
